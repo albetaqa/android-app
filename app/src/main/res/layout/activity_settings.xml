@@ -1,0 +1,386 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.albetaqa.SettingsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!--
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        -->
+
+    <!-- Daily cards border ˅ -->
+        <TextView
+            android:id="@+id/dailyTitle"
+            android:text="@string/daily"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/title_font" />
+
+        <ImageView android:id="@+id/dailyHelp"
+            android:src="@drawable/help"
+            android:onClick="dailyHelp"
+
+            android:layout_alignTop="@id/dailyTitle"
+            android:layout_toRightOf="@id/dailyTitle"
+            android:layout_alignBottom="@id/dailyTitle"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/dailyBorder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@id/dailyTitle"
+            android:layout_alignBottom="@+id/dailyNotificationTgl"
+
+            android:layout_marginBottom="@dimen/betaqa_margin_m"
+
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <!-- Daily cards border ˄ -->
+
+
+        <ToggleButton android:id="@+id/dailyAutoDownloadTgl"
+            android:enabled="false"
+
+            android:textOn="@string/toggle_on"
+            android:textOff="@string/toggle_off"
+
+            android:layout_below="@id/dailyTitle"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="@dimen/betaqa_margin"
+            android:layout_marginTop="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true" />
+
+        <TextView android:id="@+id/dailyAutoDownloadTxt"
+            android:text="@string/auto_download"
+
+            android:layout_toLeftOf="@+id/dailyAutoDownloadHelp"
+            android:layout_alignBaseline="@id/dailyAutoDownloadTgl"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView android:id="@id/dailyAutoDownloadHelp"
+            android:src="@drawable/help"
+            android:onClick="dailyAutoDownloadHelp"
+
+            android:layout_alignTop="@id/dailyAutoDownloadTgl"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/dailyAutoDownloadTgl"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ToggleButton android:id="@id/dailyNotificationTgl"
+            android:enabled="false"
+
+            android:textOn="@string/toggle_on"
+            android:textOff="@string/toggle_off"
+
+            android:layout_below="@id/dailyAutoDownloadTgl"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="@dimen/betaqa_margin"
+            android:layout_marginBottom="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true" />
+
+        <TextView android:id="@+id/dailyNotificationTxt"
+            android:text="@string/show_notification"
+
+
+            android:layout_alignBaseline="@id/dailyNotificationTgl"
+            android:layout_toLeftOf="@+id/dailyNotificationHelp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView android:id="@id/dailyNotificationHelp"
+            android:src="@drawable/help"
+            android:onClick="dailyNotificationHelp"
+
+            android:layout_alignTop="@id/dailyNotificationTgl"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/dailyNotificationTgl"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Random cards border ˅ -->
+        <TextView
+            android:id="@+id/randomTitle"
+            android:text="@string/random"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dailyBorder"
+            android:layout_marginTop="@dimen/betaqa_margin_double"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <ImageView android:id="@+id/rndHelp"
+            android:src="@drawable/help"
+            android:onClick="rndHelp"
+
+            android:layout_alignTop="@id/randomTitle"
+            android:layout_toRightOf="@id/randomTitle"
+            android:layout_alignBottom="@id/randomTitle"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/rndBorder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@id/randomTitle"
+            android:layout_alignBottom="@+id/rndDailyLimitEdt"
+
+            android:layout_marginBottom="@dimen/betaqa_margin_m"
+
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- Random cards border ˄ -->
+
+        <ToggleButton android:id="@+id/rndAutoDownloadTgl"
+            android:enabled="false"
+
+            android:textOn="@string/toggle_on"
+            android:textOff="@string/toggle_off"
+
+            android:layout_below="@id/randomTitle"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="@dimen/betaqa_margin"
+            android:layout_marginTop="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true" />
+
+        <TextView android:id="@+id/rndAutoDownloadTxt"
+            android:text="@string/auto_download"
+
+            android:layout_alignBaseline="@id/rndAutoDownloadTgl"
+            android:layout_toLeftOf="@+id/rndAutoDownloadHelp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView android:id="@id/rndAutoDownloadHelp"
+            android:src="@drawable/help"
+            android:onClick="rndAutoDownloadHelp"
+
+            android:layout_alignTop="@id/rndAutoDownloadTgl"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/rndAutoDownloadTgl"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton android:id="@+id/rndNotificationTgl"
+            android:enabled="false"
+
+            android:textOn="@string/toggle_on"
+            android:textOff="@string/toggle_off"
+
+            android:layout_below="@id/rndAutoDownloadTgl"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true" />
+
+        <TextView android:id="@+id/rndNotificationTxt"
+            android:text="@string/show_notification"
+
+            android:layout_alignBaseline="@id/rndNotificationTgl"
+            android:layout_toLeftOf="@+id/rndNotificationHelp"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView android:id="@id/rndNotificationHelp"
+            android:src="@drawable/help"
+            android:onClick="rndNotificationHelp"
+
+            android:layout_alignTop="@id/rndNotificationTgl"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/rndNotificationTgl"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText android:id="@id/rndDailyLimitEdt"
+            android:enabled="false"
+            android:text="3"
+            android:background="@drawable/textbox"
+            android:gravity="center"
+
+            android:layout_below="@id/rndNotificationTgl"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/rndNotificationTgl"
+
+            android:layout_marginLeft="@dimen/betaqa_margin"
+            android:layout_marginBottom="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/rndDailyLimitTxt"
+            android:text="@string/rnd_limit_daily"
+
+            android:layout_alignBaseline="@id/rndDailyLimitEdt"
+            android:layout_toLeftOf="@+id/rndDailyLimitHelp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView android:id="@id/rndDailyLimitHelp"
+            android:src="@drawable/help"
+            android:onClick="rndDailyLimitHelp"
+
+            android:layout_alignTop="@id/rndDailyLimitEdt"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/rndDailyLimitEdt"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/historyTitle"
+            android:text="@string/history"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rndBorder"
+            android:layout_marginTop="@dimen/betaqa_margin_double"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <ImageView android:id="@+id/historyHelp"
+            android:src="@drawable/help"
+            android:onClick="historyHelp"
+
+            android:layout_alignTop="@id/historyTitle"
+            android:layout_toRightOf="@id/historyTitle"
+            android:layout_alignBottom="@id/historyTitle"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/historyBorder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@id/historyTitle"
+            android:layout_alignBottom="@+id/historyLimitEdt"
+
+            android:layout_marginBottom="@dimen/betaqa_margin_m"
+
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText android:id="@id/historyLimitEdt"
+            android:enabled="false"
+            android:text="3"
+            android:background="@drawable/textbox"
+            android:gravity="center"
+
+            android:layout_below="@id/historyTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/rndDailyLimitEdt"
+
+            android:layout_marginLeft="@dimen/betaqa_margin"
+            android:layout_marginTop="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/historyLimitTxt"
+            android:text="@string/history_limit_daily"
+
+            android:layout_alignBaseline="@id/historyLimitEdt"
+            android:layout_toLeftOf="@+id/historyLimitHelp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView android:id="@id/historyLimitHelp"
+            android:src="@drawable/help"
+            android:onClick="historyLimitHelp"
+
+            android:layout_alignTop="@id/historyLimitEdt"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/historyLimitEdt"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="daily_betaqa_url">http://www.albetaqa.com/apps/google-play/link(s).txt</string>
+    <string name="daily_betaqa_notify">لديك بطاقة جديدة - بطاقة اليوم</string>
+
+    <string name="app_name">البطاقة</string>
+    <string name="accept_button">موافق</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_about">عن التطبيق</string>
+    <string name="review_settings_button">مراجعة الإعدادات</string>
+    <string name="share">مشاركة البطاقة</string>
+    <string name="splash_content">ينقسم تطبيق البطاقة الدعوي إلى قسمين\n
+\n
+قسم اخترنا لك\n
+لاستقبال بطاقة دعوية جديدة بشكل دوري بحد أقصى بطاقة واحدة يوميًا\n
+\n
+قسم شارك واحتسب\n
+لاستعراض تصاميم موقع البطاقة الدعوي ومشاركتها ونشرها عبر وسائل التواصل الاجتماعي المختلفة</string>
+    <string name="splash_help_content">يمكنك الاستعانة بالضغط على علامة الاستفهام في شاشة الإعدادات لمعلومات أكثر عن كل خاصية أو إعداد</string>
+    <string name="title_activity_main">Albetaqa - البطاقة</string>
+    <string name="share_text">http://bit.ly/albetaqa تطبيق البطاقة الدعوي</string>
+    <string name="loading_betaqa">جاري تحميل البطاقة</string>
+    <string name="error_download_betaqa">خطأ أثناء تحميل البطاقة</string>
+
+    <!-- شاشة الإعدادات -->
+    <string name="title_activity_settings">الإعدادات</string>
+    <string name="toggle_on">يعمل</string>
+    <string name="toggle_off">معطل</string>
+    <string name="daily">اخترنا لك</string>
+    <string name="random">شارك واحتسب</string>
+    <string name="history">الاحتفاظ بالبطاقات</string>
+    <string name="auto_download">تحميل البطاقة تلقائيًا</string>
+    <string name="show_notification">إظهار إشعار</string>
+    <string name="rnd_limit_daily">عدد البطاقات يوميًا</string>
+    <string name="history_limit_daily">عدد أيام الاحتفاظ</string>
+    <string name="daily_help">يختار موقع البطاقة بشكل دوري بطاقة جديدة يوميًا بحد أقصى, وهي بطاقات تناسب المناسبات والأحداث في بعض الأيام</string>
+    <string name="daily_auto_download_help">سيقوم التطبيق بتحميل بطاقات "اخترنا لك" يوميًا دون الحاجة لفتح شاشة البرنامج</string>
+    <string name="daily_notification_help">سيقوم التطبيق بإخطارك من خلال الإشعارات عند تحميل بطاقة "اخترنا لك" جديدة</string>
+    <string name="rnd_help">يعتمد اختيار بطاقات "شارك واحتسب" على طريقة حسابية عشوائية لاختيار بطاقة واحدة أو أكثر من البطاقات الموجود على الموقع</string>
+    <string name="rnd_auto_download_help">سيقوم التطبيق بتحميل بطاقات "شارك واحتسب" يوميًا دون الحاجة لفتح شاشة البرنامج</string>
+    <string name="rnd_notification_help">سيقوم التطبيق بإخطارك من خلال الإشعارات عند تحميل بطاقة "شارك واحتسب" جديدة</string>
+    <string name="rnd_daily_limit_help">حسب اختيارك يمكنك اختيار بطاقة واحدة أو أكثر يوميًا</string>
+    <string name="history_help">هذا الخيار خاص بحفظ البطاقات على الذاكرة</string>
+    <string name="history_limit_help">إذا أردت عدم مسح أي بطاقة أدخل 0, وإذا أردت الاحتفاظ بالبطاقات لمدة أسبوع أدخل 7, سيقوم التطبيق تلقائيًا بحذف البطاقات التي تجاوزت سبعة أيام لكي لا تشغل حيزًا من ذاكرة هاتفك</string>
+
+
+
+</resources>

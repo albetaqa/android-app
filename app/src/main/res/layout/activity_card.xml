@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.albetaqa.CardActivity">
+
+    <com.albetaqa.util.ZoomableImageView
+        android:id="@+id/zimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:id="@+id/shareBtn"
+        android:onClick="shareClicked"
+
+        android:src="@drawable/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageButton
+        android:id="@+id/refreshBtn"
+        android:onClick="refreshClicked"
+
+        android:visibility="gone"
+
+        android:src="@drawable/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toLeftOf="@id/shareBtn"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

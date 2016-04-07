@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.albetaqa.MainActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/header"
+            android:src="@drawable/header"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:id="@+id/daily"
+            android:onClick="dailyClicked"
+
+            android:background="@drawable/daily"
+            android:orientation="vertical"
+
+            android:layout_below="@id/header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/daily_txt"/>
+            <TextView
+                android:layout_gravity="center"
+                android:text="1 جديد من 50 بطاقة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rnd"
+            android:onClick="rndClicked"
+
+            android:background="@drawable/rnd"
+            android:orientation="vertical"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/daily"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rnd_txt"/>
+            <TextView
+                android:layout_gravity="center"
+                android:text="1 جديد من 50 بطاقة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/all"
+            android:onClick="allClicked"
+
+            android:background="@drawable/all"
+            android:orientation="vertical"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rnd"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginRight="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/all_txt"/>
+            <TextView
+                android:layout_gravity="center"
+                android:text="1 جديد من 50 بطاقة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fav"
+            android:onClick="favClicked"
+            android:background="@drawable/fav"
+            android:orientation="vertical"
+
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/settings"
+            android:layout_below="@id/all"
+
+            android:layout_marginLeft="@dimen/betaqa_margin_half"
+            android:layout_marginBottom="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fav_txt"/>
+            <TextView
+                android:layout_gravity="center"
+                android:text="20 بطاقة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/settings"
+            android:onClick="settingBtnClicked"
+            android:src="@drawable/settings"
+
+            android:layout_alignTop="@id/fav"
+            android:layout_alignBottom="@id/fav"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="@dimen/betaqa_margin_half"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ScrollView>

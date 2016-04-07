@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/betaqa_margin"
+    android:paddingRight="@dimen/betaqa_margin"
+    android:paddingTop="@dimen/betaqa_margin"
+    android:paddingBottom="@dimen/betaqa_margin"
+    tools:context="com.albetaqa.FirstRunActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/splash_scroll"
+
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/buttons"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:src="@drawable/header"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/line"
+                android:background="#dddddd"
+
+                android:layout_below="@id/logo"
+                android:layout_marginBottom="15dp"
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dip" />
+
+            <TextView android:id="@+id/content"
+                android:text="@string/splash_content"
+                android:textColor="#40454d" android:textSize="20sp"
+                android:textStyle="normal"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/line"
+
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/line2"
+                android:background="#dddddd"
+
+                android:layout_below="@id/content"
+                android:layout_marginBottom="15dp"
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dip" />
+
+            <TextView android:id="@+id/help"
+                android:text="@string/splash_help_content"
+                android:textColor="#40454d" android:textSize="20sp"
+                android:textStyle="normal"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/line2"
+
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView android:id="@+id/help_icon"
+                android:src="@drawable/help"
+                android:onClick="help"
+
+                android:layout_below="@id/help"
+                android:layout_centerHorizontal="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/dpi"
+                android:src="@drawable/dpi"
+
+
+                android:layout_below="@id/help_icon"
+                android:layout_centerHorizontal="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout android:id="@+id/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+        <Button android:id="@+id/settings_button"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/review_settings_button"
+            android:onClick="settingBtnClicked" />
+
+        <Button android:id="@+id/accept_button"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/accept_button" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
